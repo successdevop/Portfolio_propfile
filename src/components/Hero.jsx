@@ -76,7 +76,7 @@ function Hero() {
         <div className="absolute left-[50%] top-[50%] z-[99] translate-x-[-50%] translate-y-[-50%] lg:left-[20%] lg:flex lg:translate-x-[-10%] lg:items-center lg:gap-[15rem]">
           <div>
             <div className="mb-4 h-2 w-[25%] bg-[#e9b949]"></div>
-            <h3 className="font-Roboto text-[4rem] font-bold text-white">
+            <h3 className="mb-6 font-Roboto text-[4.3rem] font-bold text-white">
               Hello, I'm <span className="text-[#e9b949]">Raphael Success</span>
             </h3>
             <p className="text-[2.5rem] font-light text-[#fffaeb]">
