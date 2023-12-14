@@ -8,14 +8,16 @@ function Contact() {
           Contact Details
         </h4>
         <p className="mt-[8rem] text-center text-[1.8rem] text-[#617d98]">
-          If you are looking to get ahold of me, you can send me an email at{" "}
-          <span className="text-[2rem] font-bold text-[#e9b949]">
+          If you are looking to get ahold of me, you can send me an email at
+          <br />
+          <span className="text-[2rem] font-bold text-[#e9b949] hover:text-[2.2rem] hover:text-[#102a42]">
             successraphael28@gmail.com
           </span>
         </p>
         <p className="mt-[4rem] text-center text-[1.8rem] text-[#617d98]">
-          You can also reach me on my cell phone at{" "}
-          <span className="text-[2rem] font-bold text-[#e9b949]">
+          You can also reach me on my cell phone at
+          <br />
+          <span className="text-[2rem] font-bold text-[#e9b949] hover:text-[2.2rem] hover:text-[#102a42]">
             +2348139111114
           </span>
         </p>
