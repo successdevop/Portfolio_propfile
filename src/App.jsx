@@ -1,16 +1,16 @@
-import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import Spinner from "./components/Spinner";
+import Navbar from "./components/Navbar";
 
-const Home = lazy(() => import("./pages/Home"));
-const About = lazy(() => import("./pages/About"));
-const Project = lazy(() => import("./pages/Project"));
-const Contact = lazy(() => import("./pages/Contact"));
-const Nomatch = lazy(() => import("./pages/Nomatch"));
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Project from "./pages/Project";
+import Contact from "./pages/Contact";
+import Nomatch from "./pages/Nomatch";
 
 function App() {
   return (
-    <Suspense fallback={<Spinner />}>
+    <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Nomatch />} />
       </Routes>
-    </Suspense>
+    </>
   );
 }
 

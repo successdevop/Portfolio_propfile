@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { FaCircleDown } from "react-icons/fa6";
+import pics from "../assets/first.jpg";
 
 function Hero() {
   useEffect(() => {
@@ -71,20 +72,33 @@ function Hero() {
 
   return (
     <div className="hero relative">
-      <div className="max-w-[120rem] mx-auto">
-        <div className="absolute top-[47%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-[99]">
-          <div className="h-2 bg-[#e9b949] w-[25%] mb-4"></div>
-          <h3 className="text-white text-[4rem] font-Roboto font-bold">
-            Hello, I'm <span className="text-[#e9b949]">Raphael Success</span>
-          </h3>
-          <p className="text-[2.5rem] font-light text-[#fffaeb]">
-            I'm a frontend web developer
-          </p>
-          <div className="flex flex-col items-start gap-10 mt-[4rem]">
-            <button className=" text-[#fffaeb] inline-flex items-center gap-4 text-[1.6rem] bg-[#e9b949] py-3 px-4 rounded-lg hover:bg-[#fffaeb] hover:text-black hover:transition-all">
-              <FaCircleDown />
-              Download CV
-            </button>
+      <div className="mx-auto max-w-[120rem]">
+        <div className="absolute left-[50%] top-[50%] z-[99] translate-x-[-50%] translate-y-[-50%] lg:left-[20%] lg:flex lg:translate-x-[-10%] lg:items-center lg:gap-[15rem]">
+          <div>
+            <div className="mb-4 h-2 w-[25%] bg-[#e9b949]"></div>
+            <h3 className="font-Roboto text-[4rem] font-bold text-white">
+              Hello, I'm <span className="text-[#e9b949]">Raphael Success</span>
+            </h3>
+            <p className="text-[2.5rem] font-light text-[#fffaeb]">
+              I'm a frontend web developer
+            </p>
+            <div className="mt-[4rem] flex flex-col items-start gap-10">
+              <button className=" inline-flex items-center gap-4 rounded-lg bg-[#e9b949] px-4 py-3 text-[1.6rem] text-[#fffaeb] hover:bg-[#fffaeb] hover:text-black hover:transition-all">
+                <FaCircleDown />
+                Download CV
+              </button>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div
+              className={`relative h-[45rem] w-[32rem] rounded-2xl before:absolute before:left-8 before:top-8 before:h-full before:w-full before:rounded-2xl before:border-[.5rem] before:border-[#e9b949] before:content-[""]`}
+            >
+              <img
+                src={pics}
+                alt="profile pics"
+                className="relative block h-full w-full rounded-2xl object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

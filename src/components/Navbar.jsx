@@ -1,8 +1,7 @@
-import { FaBars, FaMoon } from "react-icons/fa6";
+import { FaBars } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
-import { GiStarFormation } from "react-icons/gi";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useRef, useState } from "react";
 
 function Navbar() {
@@ -18,16 +17,19 @@ function Navbar() {
 
   return (
     <nav className="bg-[#fffaeb]">
-      <div className="max-w-[120rem] mx-auto">
+      <div className="mx-auto max-w-[120rem] justify-between px-8 pr-16 lg:flex lg:items-center">
         {/* nav logo and toggle bars */}
-        <div className="flex items-center justify-between px-8 py-10">
+        <div className="flex items-center justify-between px-2 py-10">
           <div>
-            <p className="text-[#102a42] text-[3.8rem] font-Roboto tracking-[.28rem] font-bold drop-shadow-lg">
+            <p className="font-Roboto text-[3.8rem] font-bold tracking-[.28rem] text-[#102a42] drop-shadow-lg">
               Success<span className="text-[#e9b949]">Dev</span>
             </p>
           </div>
           {/* nav buttons for toggle */}
-          <div onClick={() => setNavOpen((open) => !open)}>
+          <div
+            onClick={() => setNavOpen((open) => !open)}
+            className="lg:hidden"
+          >
             {navOpen ? (
               <button className="bg-transparent">
                 <IoClose size={"3rem"} fill="#e9b949" />
@@ -44,48 +46,45 @@ function Navbar() {
         <div
           ref={linksContainer}
           style={linkStyles}
-          className="overflow-hidden transition-all"
+          className="overflow-hidden transition-all lg:!h-auto"
         >
-          <ul className="flex flex-col items-center gap-8 pb-10" ref={linksRef}>
+          <ul
+            className="flex flex-col items-center gap-8 pb-10 lg:flex-row lg:gap-16 lg:pb-0"
+            ref={linksRef}
+          >
             <li>
-              <Link
+              <NavLink
                 to={"/"}
-                className="text-[2.5rem] block hover:text-[#e9b949] hover:transition-all"
+                className="block text-[2.5rem] hover:text-[#e9b949] hover:transition-all"
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to={"/about"}
-                className="text-[2.5rem] block hover:text-[#e9b949] hover:transition-all"
+                className="block text-[2.5rem] hover:text-[#e9b949] hover:transition-all"
               >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to={"/projects"}
-                className="text-[2.5rem] block hover:text-[#e9b949] hover:transition-all"
+                className="block text-[2.5rem] hover:text-[#e9b949] hover:transition-all"
               >
                 Projects
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to={"/contact"}
-                className="text-[2.5rem] block hover:text-[#e9b949] hover:transition-all"
+                className="block rounded-2xl text-[2.5rem] hover:text-[#e9b949] hover:transition-all lg:bg-[#e9b949] lg:px-6 lg:py-4 lg:text-white lg:hover:text-white lg:hover:transition-none"
               >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
-        </div>
-
-        {/* light and dark effect */}
-        <div className="hidden">
-          <GiStarFormation />
-          <FaMoon />
         </div>
       </div>
     </nav>
