@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { FaCircleDown } from "react-icons/fa6";
 import pics from "../assets/first.jpg";
+import CV from "../SuccessFE.pdf";
+import { Link } from "react-router-dom";
 
 function Hero() {
   useEffect(() => {
@@ -79,15 +81,21 @@ function Hero() {
             <h3 className="mb-6 font-Roboto text-[4.3rem] font-bold text-white">
               Hello, I'm <span className="text-[#e9b949]">Raphael Success</span>
             </h3>
-            <p className="text-[2.5rem] font-light text-[#fffaeb]">
+            <p className="mb-[4rem] text-[2.5rem] font-light text-[#fffaeb]">
               I'm a frontend web developer
             </p>
-            <div className="mt-[4rem] flex flex-col items-start gap-10">
-              <button className=" inline-flex items-center gap-4 rounded-lg bg-[#e9b949] px-4 py-3 text-[1.6rem] text-[#fffaeb] hover:bg-[#fffaeb] hover:text-black hover:transition-all">
+            <Link
+              to={CV}
+              download={"CV-PDF-document"}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex flex-col items-start gap-10"
+            >
+              <button className="inline-flex items-center gap-4 rounded-lg bg-[#e9b949] px-4 py-3 text-[1.6rem] text-[#fffaeb] hover:bg-[#fffaeb] hover:text-black hover:transition-all">
                 <FaCircleDown />
                 Download CV
               </button>
-            </div>
+            </Link>
           </div>
           <div className="hidden lg:block">
             <div
