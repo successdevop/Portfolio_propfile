@@ -3,7 +3,7 @@ function Contact() {
     <div>
       <div className="border-t-[.4rem] border-t-[#e9b949] bg-[#fffaeb] px-[4rem] py-[10rem]">
         <h4
-          className={`relative text-center font-Roboto text-[3rem] font-bold leading-[1.25rem] tracking-[.25rem] after:absolute after:bottom-[-3rem] after:right-[50%] after:h-[.5rem] after:w-[20%] after:translate-x-[50%] after:bg-[#e9b949] after:content-[""]`}
+          className={`relative text-center font-Roboto text-[3rem] font-bold leading-[1.25rem] tracking-[.25rem] after:absolute after:bottom-[-3rem] after:right-[50%] after:h-[.5rem] after:w-[10%] after:translate-x-[50%] after:bg-[#e9b949] after:content-[""]`}
         >
           Contact Details
         </h4>

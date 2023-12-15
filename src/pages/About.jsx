@@ -3,7 +3,7 @@ function About() {
   return (
     <div className="border-t-4 border-t-[#e9b949] bg-[#fffaeb] py-[6rem]">
       <h1
-        className={`relative mb-10 text-center font-Roboto text-[3rem] font-bold leading-3 tracking-[.25rem] after:absolute after:bottom-[-2rem] after:right-[50%] after:h-[.5rem] after:w-[10%] after:translate-x-[50%] after:bg-[#e9b949] after:content-[""] lg:mb-[5rem]`}
+        className={`relative mb-10 text-center font-Roboto text-[3rem] font-bold leading-3 tracking-[.25rem] after:absolute after:bottom-[-2rem] after:right-[50%] after:h-[.5rem] after:w-[5%] after:translate-x-[50%] after:bg-[#e9b949] after:content-[""] lg:mb-[5rem]`}
       >
         About Me
       </h1>

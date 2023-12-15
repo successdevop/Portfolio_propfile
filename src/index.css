@@ -31,14 +31,6 @@
   }
 }
 
-.love {
-  color: #102a42;
-  color: #e9b949;
-  color: #fffaeb;
-  color: #617d98;
-  color: #617d98;
-}
-
 .hero,
 canvas {
   position: absolute;
@@ -46,4 +38,11 @@ canvas {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.projects-page-center {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3rem;
 }
