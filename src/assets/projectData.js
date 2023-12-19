@@ -7,4 +7,11 @@ export const projects = [
     projectSourceCode: "",
     projectImage: BlogImage,
   },
+  {
+    projectName: "Ecommerce Pizza Store",
+    projectDesc: "",
+    projectWebLink: "https://ecommerce-pizza-store.netlify.app/",
+    projectSourceCode: "",
+    projectImage: BlogImage,
+  },
 ];
