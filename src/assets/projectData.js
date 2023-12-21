@@ -1,4 +1,5 @@
 import BlogImage from "./BlogImage.png";
+import PizzaStoreImage from "./PizzaStoreImage.png";
 export const projects = [
   {
     projectName: "Ecommerce Blog Application",
@@ -12,6 +13,6 @@ export const projects = [
     projectDesc: "",
     projectWebLink: "https://ecommerce-pizza-store.netlify.app/",
     projectSourceCode: "",
-    projectImage: BlogImage,
+    projectImage: PizzaStoreImage,
   },
 ];
